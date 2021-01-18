@@ -1,27 +1,87 @@
 <html lang="en">
 <head>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap');
+
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+            background-color: #EAE1DF;
+            font-size: 18px;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 2%;
+            color: #676564;
+        }
+        .wrapper{
+            background: #F9F6F4;
+        } 
+        img{
+            max-width: 100%;
+        }
+        .col-1{
+            padding: 4%;
+        }
+        .userpic{
+            float: left; 
+        }
+        #user{
+            max-height: 100px;
+            max-width: 100px;
+            margin: 25% 25% 25% 25%;
+            float: left;
+        }
+        .user-text{
+            float: right;
+            font-size: smaller;
+            padding-top: 5%;
+            text-align: justify;
+        }
+        .col-2{
+            padding-top: 10%;
+        }
+        
+        
+
+    </style>
     
-</head>
+</head
 <body>
 
     <div class="wrapper"> <!--Wrapper-->
 
         <!--- banner-->
-        <div class="banner"><img src="https://assets.website-files.com/5af08c5b036ffba79a4f2669/5d56ddfccf8afa5a75639235_venmo-logo.png"></div>
+        <div class="banner">
+            <img id="banner-pic" src="https://whitetruffle.com/wp-content/uploads/2017/04/venmo-banner-1459972512665-1.jpg">
         </div>
 
         <div class="col-1">
-            <div class="userpic"><img src="data:image/jpeg;base64,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" ></div>
-            <h2>You paid Jane Doe</h2>
-            <p>memo</p>
-            <h2>Trasnfer date and time</h2>
-            <p>Jan 04, 2021 PST. Amount</p>
+            <div class="userpic"><img id="user" src="https://www.congressionalaward.org/wp-content/uploads/2020/02/portrait-square-08.jpg" ></div>
+            <div class=" user-text">
+                <h2>You paid Jane Doe</h2>
+                <p>memo</p>
+                <h2>Trasnfer date and time</h2>
+                <p>Jan 04, 2021 PST. Amount</p>
+            </div>
 
             <div class="btn">
-                <a id="like" href="#">like</a>
-                <a id="Comment" href="#">Comment</a>
+                <a id="likebtn" href="#">like</a>
             </div>
+            <div class="btn">
+                <a id="Commentbtn" href="#">Comment</a>
+            </div>
+
+            
         </div>
+
+        
+
 
         <div class="line"></div>
 
@@ -48,7 +108,7 @@
     </div>
 
     <div class="col-5">
-        <p>Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam veritatis maiores in deleniti nulla, doloribus ex error dolores illum dignissimos nobis quas! Culpa praesentium dignissimos, quae aperiam hic eos?</p>
+        <p>Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam veritatis maiores in deleniti nulla, doloribus ex error dolores illum dignissimos nobis quas! Culpa praesentium dignissimos, quae aperiam hic eos.</p>
         <p>Moneysend is located at</p>
         <p>adress</p>
     </div>
